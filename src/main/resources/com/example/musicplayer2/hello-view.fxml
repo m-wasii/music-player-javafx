@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" style="-fx-alignment: center; -fx-background-position: center center;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.musicplayer2.HelloController">
+    <children>
+      <HBox prefHeight="38.0" prefWidth="512.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+                <ProgressBar fx:id="songProgressBar" prefHeight="38.0" prefWidth="492.0" progress="0.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+        <HBox alignment="CENTER" cache="true" prefHeight="150.0" prefWidth="512.0" spacing="20.0">
+            <children>
+                <Button fx:id="playButton" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#playMedia" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 100%; -fx-background-image: url(&quot;https://cdn3.iconfinder.com/data/icons/music-fill/100/Play-512.png&quot;); -fx-background-size: cover; -fx-background-position: center center;" text="&gt;" textAlignment="CENTER" textFill="TRANSPARENT">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+                <Button fx:id="previousButton" alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#previousMedia" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 20%; -fx-background-image: url(&quot;https://cdn3.iconfinder.com/data/icons/music-fill/100/Music_Start-512.png&quot;); -fx-background-size: cover;" textAlignment="CENTER" />
+                <Button fx:id="nextButton" alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#nextMedia" prefHeight="65.0" prefWidth="65.0" style="-fx-background-radius: 20%; -fx-background-image: url(&quot;https://cdn3.iconfinder.com/data/icons/music-fill/100/Music_End-512.png&quot;); -fx-background-size: cover;" textAlignment="CENTER" />
+            <Button fx:id="shuffleButton" alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="CENTER" layoutX="252.0" layoutY="53.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#shuffle" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 100%; -fx-background-image: url(&quot;https://cdn3.iconfinder.com/data/icons/music-fill/100/Random-512.png&quot;); -fx-background-size: cover;" textAlignment="CENTER" />
+                <Slider fx:id="volumeSlider" blendMode="HARD_LIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="89.0" value="100.0" />
+            </children>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </HBox>
+    </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
